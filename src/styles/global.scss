@@ -1,5 +1,7 @@
 @import "./fonts.scss";
+@import "./colors.scss";
 body {
-  font-family: $font-regular;
   margin: 0;
+  font-family: $font-regular;
+  color: $black-color;
 }
