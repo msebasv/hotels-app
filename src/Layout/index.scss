@@ -1,0 +1,16 @@
+@import "../styles/colors.scss";
+
+header {
+  background-color: $blue-sky-color;
+  height: 70px;
+}
+
+section {
+  background-color: $primary-color;
+  height: calc(100vh - 70px);
+}
+
+footer {
+  background-color: $secundary-color;
+  height: 100px;
+}
