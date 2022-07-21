@@ -2,11 +2,13 @@ import React from "react";
 
 import Layout from "./Layout";
 
+import { Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
-    <div className="App">
-      <Layout />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}></Route>
+    </Routes>
   );
 };
 
