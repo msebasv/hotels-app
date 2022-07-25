@@ -1,13 +1,14 @@
 @import "../styles/colors.scss";
 
 header {
-  background-color: $blue-sky-color;
-  height: 70px;
+  background-color: $white-color;
+  border-bottom: 1px solid rgba($color: #dddddd, $alpha: 1);
+  height: 80px;
 }
 
 section {
-  background-color: $primary-color;
-  height: calc(100vh - 70px);
+  background-color: $white-color;
+  height: calc(100vh - 80px);
 }
 
 footer {
