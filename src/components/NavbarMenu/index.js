@@ -2,7 +2,7 @@ import React from "react";
 
 import "./index.scss";
 
-import FormSearch from "../FormSearch";
+import { Link } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import Logo from "../../assets/images/logo.png";
 
@@ -20,7 +20,9 @@ const NavbarMenu = () => {
           />
         </Navbar.Brand>
         <Nav className="nav-container">
-          <Nav.Link>Home</Nav.Link>
+          <Nav.Link as={Link} to="/">
+            Home
+          </Nav.Link>
           <Nav.Link>About</Nav.Link>
         </Nav>
       </Container>

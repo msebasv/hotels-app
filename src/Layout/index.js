@@ -1,6 +1,7 @@
 import React from "react";
 
 import NavbarMenu from "../components/NavbarMenu";
+import { Outlet } from "react-router-dom";
 
 import "./index.scss";
 
@@ -10,7 +11,9 @@ const Layout = () => {
       <header>
         <NavbarMenu />
       </header>
-      <section>Section</section>
+      <section>
+        <Outlet />
+      </section>
       <footer>Footer</footer>
     </div>
   );

@@ -1,10 +1,62 @@
-.form-navbar-container {
-  display: flex;
-  flex-direction: row;
-}
+@import "../../styles/colors.scss";
 
-.form-container-date {
+.form-search-container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 95%;
+  color: $black-color;
+
+  .row-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $white-color;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .row {
+    margin-bottom: 40px;
+
+    input {
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid $primary-color;
+    }
+
+    .dropdown-room {
+      border-bottom: 1px solid $primary-color;
+      button {
+        width: 100%;
+        background-color: $white-color;
+        color: $black-color;
+        border: none;
+        border-radius: 0px;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+    .col-button {
+      padding: 0 !important;
+
+      .button-search-hotel {
+        background-color: $blue-color;
+
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .row > * {
+    @media (max-width: 991px) {
+      margin-top: 10px;
+    }
+  }
 }
